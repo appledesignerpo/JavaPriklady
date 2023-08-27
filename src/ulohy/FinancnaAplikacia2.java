@@ -47,25 +47,7 @@ class Penazenka2 {
 public class FinancnaAplikacia2 {
 
 
-    class PrveSpustenie {
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Vitajte pri prvom spustení finančnej kalkulačky!");
-            System.out.print("Vytvorte si heslo: ");
-            String noveHeslo = scanner.nextLine();
-
-            // Uloženie hesla do súboru
-            try {
-                FileWriter writer = new FileWriter("heslo.txt");
-                writer.write(noveHeslo);
-                writer.close();
-                System.out.println("Heslo bolo úspešne uložené.");
-            } catch (IOException e) {
-                System.out.println("Chyba pri ukladaní hesla.");
-            }
-        }
-    }
 
 
     public static void main(String[] args) {
@@ -73,8 +55,30 @@ public class FinancnaAplikacia2 {
         String ulozeneHeslo = citajUlozeneHeslo();
 
         if (ulozeneHeslo == null) {
+
+
+
+
             // Prvý spustenie, používateľ musí vytvoriť heslo
-            // Implementujte kód zo "PrveSpustenie"
+
+                    System.out.println("Vitajte pri prvom spustení finančnej kalkulačky!");
+                    System.out.print("Vytvorte si heslo: ");
+                    String noveHeslo = scanner.nextLine();
+
+                    // Uloženie hesla do súboru
+                    try {
+                        FileWriter writer = new FileWriter("heslo.txt");
+                        writer.write(noveHeslo);
+                        writer.close();
+                        System.out.println("Heslo bolo úspešne uložené.");
+                    } catch (IOException e) {
+                        System.out.println("Chyba pri ukladaní hesla.");
+                    }
+
+
+
+
+
         } else {
             System.out.print("Zadajte heslo: ");
             String zadaneHeslo = scanner.nextLine();
@@ -95,7 +99,7 @@ public class FinancnaAplikacia2 {
 
             while (true) {
                 System.out.println("Vyberte požadovanú operáciu napr.:");
-                System.out.println("1 - Vklad peňazí max 150");
+                System.out.println("1 - Vklad peňazí napr. 150");
                 System.out.println("2 - Výber peňazí");
                 System.out.println("3 - Zobrazenie zostatku");
                 System.out.println("0 - Ukončiť program");
