@@ -52,24 +52,22 @@ public class FinancnaAplikacia {
             int volba = scanner.nextInt();
 
             switch (volba) {
-                case 1:
+                case 1 -> {
                     System.out.print("Zadajte sumu na vklad: ");
                     double vkladSuma = scanner.nextDouble();
                     penazenka.vlozPeniaze(vkladSuma);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.print("Zadajte sumu na výber: ");
                     double vyberSuma = scanner.nextDouble();
                     penazenka.vyberPeniaze(vyberSuma);
-                    break;
-                case 3:
-                    System.out.println("Aktuálny zostatok: " + penazenka.getZostatok());
-                    break;
-                case 0:
+                }
+                case 3 -> System.out.println("Aktuálny zostatok: " + penazenka.getZostatok());
+                case 0 -> {
                     System.out.println("Ďakujeme, že ste použili finančnú aplikáciu.");
                     return;
-                default:
-                    System.out.println("Neplatná voľba, skúste znova.");
+                }
+                default -> System.out.println("Neplatná voľba, skúste znova.");
             }
         }
     }
