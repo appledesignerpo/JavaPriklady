@@ -37,7 +37,7 @@ public class PriradenieZnamkyTextovemuHodnoteniu {
         switch (vstupnaTextovaZnamka) {
             case ("vyborny") -> {
                 System.out.println(1);
-                System.out.println("Si najlepší");
+                System.out.println("Si najlepší T");
             }
 
             case ("chvalitebny") ->
