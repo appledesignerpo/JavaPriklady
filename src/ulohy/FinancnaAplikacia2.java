@@ -99,7 +99,7 @@ public class FinancnaAplikacia2 {
 
             while (true) {
                 System.out.println("Vyberte požadovanú operáciu napr.:");
-                System.out.println("1 - Vklad peňazí napr. 150");
+                System.out.println("1 - Vklad peňazí napr.150");
                 System.out.println("2 - Výber peňazí");
                 System.out.println("3 - Zobrazenie zostatku");
                 System.out.println("0 - Ukončiť program");
