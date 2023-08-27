@@ -1,6 +1,12 @@
 package ulohy;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
 
 
 
@@ -35,24 +41,49 @@ class Penazenka2 {
 }
 
 
-public class FinancnaAplikacia2 {
-    class Autentifikacia2 {
-        private static final String SPRÁVNE_HESLO = "123";
 
-        public static boolean overHeslo(String zadaneHeslo) {
-            return SPRÁVNE_HESLO.equals(zadaneHeslo);
+
+
+public class FinancnaAplikacia2 {
+
+
+    class PrveSpustenie {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Vitajte pri prvom spustení finančnej kalkulačky!");
+            System.out.print("Vytvorte si heslo: ");
+            String noveHeslo = scanner.nextLine();
+
+            // Uloženie hesla do súboru
+            try {
+                FileWriter writer = new FileWriter("heslo.txt");
+                writer.write(noveHeslo);
+                writer.close();
+                System.out.println("Heslo bolo úspešne uložené.");
+            } catch (IOException e) {
+                System.out.println("Chyba pri ukladaní hesla.");
+            }
         }
     }
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String ulozeneHeslo = citajUlozeneHeslo();
 
-        System.out.print("Zadajte heslo: ");
-        String zadaneHeslo = scanner.nextLine();
+        if (ulozeneHeslo == null) {
+            // Prvý spustenie, používateľ musí vytvoriť heslo
+            // Implementujte kód zo "PrveSpustenie"
+        } else {
+            System.out.print("Zadajte heslo: ");
+            String zadaneHeslo = scanner.nextLine();
 
-        if (Autentifikacia2.overHeslo(zadaneHeslo)) {
-            // Užívateľ bol úspešne autentifikovaný
-            System.out.println("Vitajte v finančnej kalkulačke!");
-            // Tu môžete umožniť používateľovi vykonávanie finančných výpočtov
+            if (ulozeneHeslo.equals(zadaneHeslo)) {
+                System.out.println("Vitajte v finančnej kalkulačke!");
+                // Implementujte kód pre finančnú kalkulačku
+
+
 
 
             System.out.print("Zadajte počiatočný zostatok: ");
@@ -89,14 +120,27 @@ public class FinancnaAplikacia2 {
                     default -> System.out.println("Neplatná voľba, skúste znova.");
                 }
             }
+            } else {
+                System.out.println("Nesprávne heslo. Prístup zamietnutý.");
+            }
 
-
-        } else {
-            System.out.println("Nesprávne heslo. Prístup zamietnutý.");
         }
 
 
 
-
     }
+    private static String citajUlozeneHeslo() {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("heslo.txt"));
+            String line = reader.readLine();
+            reader.close();
+            return line;
+        } catch (IOException e) {
+            return null; // Súbor s heslom neexistuje, ešte nebolo vytvorené heslo
+        }
+    }
+
 }
+
+
+
