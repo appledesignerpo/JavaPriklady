@@ -34,13 +34,7 @@ class Penazenka {
     }
 }
 
-/*public class Autentifikacia {
-    private static final String SPRÁVNE_HESLO = "tajneHeslo123";
 
-    public static boolean overHeslo(String zadaneHeslo) {
-        return SPRÁVNE_HESLO.equals(zadaneHeslo);
-    }
-}*/
 public class FinancnaAplikacia {
     class Autentifikacia {
         private static final String SPRÁVNE_HESLO = "123";
