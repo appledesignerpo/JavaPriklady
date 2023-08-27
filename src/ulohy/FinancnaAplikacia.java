@@ -1,3 +1,4 @@
+/*
 package ulohy;
 
 import java.util.Scanner;
@@ -100,3 +101,4 @@ public class FinancnaAplikacia {
 
     }
 }
+*/
