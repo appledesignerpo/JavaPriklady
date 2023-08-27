@@ -44,7 +44,7 @@ public class FinancnaAplikacia {
         System.out.println("Vaša peňaženka bola vytvorená s pociatocným zostatkom: " + pociatocnyZostatok);
 
         while (true) {
-            System.out.println("Vyberte požadovanú operáciu:");
+            System.out.println("Vyberte požadovanú operáciu napr.:");
             System.out.println("1 - Vklad peňazí");
             System.out.println("2 - Výber peňazí");
             System.out.println("3 - Zobrazenie zostatku");
