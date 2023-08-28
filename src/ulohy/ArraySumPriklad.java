@@ -2,6 +2,8 @@ package ulohy;
 
 /*   Bonusová úloha: Vytvorte metódu (napr. s názvom scitaj() resp. v angličtine getSum()), ktorá bude vracať výsledok po sčítaní.*/
 public class ArraySumPriklad {
+
+
     public static void main(String[] args) {
         int[] numbers = {55, 1045, 1554, 24540, 25454}; // Pole s cislom
 
