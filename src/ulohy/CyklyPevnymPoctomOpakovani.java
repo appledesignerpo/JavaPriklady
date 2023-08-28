@@ -55,8 +55,9 @@ public class CyklyPevnymPoctomOpakovani {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 matrix[i][j] = value;
-                value++;
-                // value *= 2;
+               // value++;
+                // bonusova
+                 value *= 2;
             }
         }
 
@@ -68,8 +69,19 @@ public class CyklyPevnymPoctomOpakovani {
             System.out.println(); // Nový riadok  po kazdom riadku matice
         }
 
+/*//Úloha na základné Excel funkcie.
+        Vytvorte pole s ľubovoľným počtom čísel (napr. 5-tich), ktorými budeme prechádzať a jednotlivé hodnoty sčítavať, čiže výsledkom bude celkový súčet hodnôt.*/
 
+        int[] numbers = {5, 7, 15, 28, 35}; // Pole  cisla
 
+        int sum = 0;
+
+        // Scitanie v poli
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        System.out.println("Celkový súčet hodnot v poli je: " + sum);
 
 
 
@@ -80,3 +92,5 @@ public class CyklyPevnymPoctomOpakovani {
 
     }
 }
+
+
