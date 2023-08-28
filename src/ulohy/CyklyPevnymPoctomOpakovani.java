@@ -44,18 +44,19 @@ public class CyklyPevnymPoctomOpakovani {
             System.out.println();
         }
 
-        // matic s udajmiu 1  do 25
+        // matica s udajmi 1  do 25
         int rows = 5;
         int cols = 5;
         int[][] matrix = new int[rows][cols];
 
         int value = 1;
 
-        // Naplnění matice hodnotami od 1 do 25
+        // Naplnenie matice hodnotami od 1 do 25
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 matrix[i][j] = value;
                 value++;
+                // value *= 2;
             }
         }
 
@@ -64,8 +65,15 @@ public class CyklyPevnymPoctomOpakovani {
             for (int j = 0; j < cols; j++) {
                 System.out.print(matrix[i][j] + "\t");
             }
-            System.out.println(); // Nový řádek po každém řádku matice
+            System.out.println(); // Nový riadok  po kazdom riadku matice
         }
+
+
+
+
+
+
+
 
 
 
