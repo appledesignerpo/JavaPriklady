@@ -169,7 +169,7 @@ public class FinancnaAplikacia2 {
             reader.close();
             return zostatok;
         } catch (IOException | NumberFormatException e) {
-            System.out.println("Chyba pri čítaní zostatku.");
+            System.out.println("Chyba pri čítaní zostatkua.");
             return 0.0;
         }
     }
