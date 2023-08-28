@@ -4,21 +4,25 @@ package ulohy;
 public class ArraySumPriklad {
 
 
+
     public static void main(String[] args) {
-        int[] numbers = {55, 1045, 1554, 24540, 25454}; // Pole s cislom
+        int[] numbers = {5, 10, 15, 20, 25}; // Pole s libovolnými čísly
 
-        int sum = getSum(numbers); // Zavolanie  metody getSum() pre scitanie
+        int sum = getSum(numbers); // Volání metody getSum() pro sčítání
 
-        System.out.println("Celkový sucet hodnot v poli je: " + sum);
+        System.out.println("Celkový součet hodnot v poli je: " + sum);
     }
 
-    // Metoda pre scitanie hodnot v poli
+    // Metoda pro sčítání hodnot v poli
     public static int getSum(int[] array) {
-        int sum = 0;
+        int sum = 0; // Inicializace proměnné pro celkový součet
+
+        // Iterace přes pole a sčítání hodnot
         for (int num : array) {
-            sum += num;
+            sum += num; // Přidání aktuální hodnoty k celkovému součtu
         }
-        return sum;
+
+        return sum; // Vrácení celkového součtu
     }
 }
 
