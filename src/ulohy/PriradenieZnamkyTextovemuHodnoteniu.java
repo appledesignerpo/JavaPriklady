@@ -37,9 +37,9 @@ public class PriradenieZnamkyTextovemuHodnoteniu {
                 System.out.println(2);
             else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dobry"))
                 System.out.println(3);
-            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dobry"))
+            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dostatocny"))
                 System.out.println(4);
-            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dobry"))
+            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("nedostatocny"))
                 System.out.println(5);
             else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("koniec"))
                 System.out.println("Ukončenie programu");
