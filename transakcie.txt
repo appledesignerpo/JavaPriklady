@@ -1,3 +1,6 @@
 Vklad: 56.0
 Výber: -256.0
 Vklad: 5000.0
+Vklad: 500.0
+Výber: -50.0
+Vklad: 500.0
