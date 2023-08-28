@@ -6,7 +6,7 @@ public class ArraySumPriklad {
 
 
     public static void main(String[] args) {
-        int[] numbers = {5, 10, 15, 20, 25}; // Pole s libovolnými čísly
+        int[] numbers = {52, 10, 15, 20, 25}; // Pole s libovolnými čísly
 
         int sum = getSum(numbers); // Volání metody getSum() pro sčítání
 
