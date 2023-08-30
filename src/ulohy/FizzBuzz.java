@@ -4,17 +4,17 @@ public class FizzBuzz {
     public static void main(String[] args) {
         int rozsah = 100; // Rozsah
 
-        // Cyklus prechádzania cez čísla od 1 do zadaného rozsahu
+        // Cyklus prechadzania cez cisla od 1 do zadaneho rozsahu
         for (int i = 1; i <= rozsah; i++) {
             // Podmienka pre FizzBuzz
             if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("FizzBuzz"); // Ak je číslo deliteľné 3 a 5
+                System.out.println("FizzBuzz"); // Delitelne 3 a 5
             } else if (i % 3 == 0) {
-                System.out.println("Fizz"); // Ak je číslo deliteľné 3
+                System.out.println("Fizz"); // Delitelne 3
             } else if (i % 5 == 0) {
-                System.out.println("Buzz"); // Ak je číslo deliteľné 5
+                System.out.println("Buzz"); // Delitelne 5
             } else {
-                System.out.println(i); // Inak, vypíšeme samotné číslo
+                System.out.println(i); // Alebo
             }
         }
     }
