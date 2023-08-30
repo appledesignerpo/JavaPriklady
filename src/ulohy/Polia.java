@@ -32,7 +32,7 @@ public class Polia {
 
         System.out.println();
         //vypis vsetky znacky aut v poli cez foreach
-        System.out.println("Vypisete značky aut cez foreach: ");
+        System.out.println("Vypisete značky aut cez foreach : ");
         System.out.println("---------------");
         for (String konkretnaZnacka:znackyAut){
             System.out.println(konkretnaZnacka);
