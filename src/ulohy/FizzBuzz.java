@@ -2,7 +2,7 @@ package ulohy;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        int rozsah = 100; // Definuje pozadovany rozsah
+        int rozsah = 100; // rozsah
 
         for (int i = 1; i <= rozsah; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
