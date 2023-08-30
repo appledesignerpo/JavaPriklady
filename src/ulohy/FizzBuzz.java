@@ -14,7 +14,7 @@ public class FizzBuzz {
             } else if (i % 5 == 0) {
                 System.out.println("Buzz"); // Delitelne 5
             } else {
-                System.out.println(i); // Alebo
+                System.out.println(i); // Alebo samotne cislo
             }
         }
     }
