@@ -1,4 +1,4 @@
-package sk.tmconsulting.pozdravy;
+package sk.tmconsulting.pozdravy.nemecky;
 
 public class Hallo {
     public static void pozdravujem() {
