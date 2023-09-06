@@ -13,6 +13,7 @@ class TestujObdlznik2 {
 
     @BeforeEach
     void setUp() {
+        System.out.println("Metóda setup sa vykoná ako prva, este pred jUnit testom");
     }
 
     @Test
