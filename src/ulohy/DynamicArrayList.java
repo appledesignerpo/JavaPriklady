@@ -1,9 +1,15 @@
 package ulohy;
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
- class RoundedSum {
+
+
+
+
+class RoundedSum {
     public static void main(String[] args) {
         ArrayList<Double> numbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
@@ -39,6 +45,52 @@ import java.util.Scanner;
 
         scanner.close();
     }
-}
+
+     @Test
+     public void testRounding() {
+         double input = 12.3456;
+         double expectedRoundedValue = 12.35; // Očakávaná zaokrúhlená hodnota na 2 desatinné miesta
+
+         double roundedValue = roundToTwoDecimalPlaces(input);
+
+
+     }
+
+     @Test
+     public void testNegativeRounding() {
+         double input = -7.8964;
+         double expectedRoundedValue = -7.90; // Očakávaná zaokrúhlená hodnota na 2 desatinné miesta
+
+         double roundedValue = roundToTwoDecimalPlaces(input);
+
+
+     }
+
+     @Test
+     public void testIntegerRounding() {
+         double input = 42.0;
+         double expectedRoundedValue = 42.0; // Zaokrúhlená hodnota pre celé číslo by mala byť rovnaká
+
+         double roundedValue = roundToTwoDecimalPlaces(input);
+
+
+     }
+
+     @Test
+     public void testZeroRounding() {
+         double input = 0.0;
+         double expectedRoundedValue = 0.0; // Zaokrúhlená hodnota pre nulu by mala byť rovnaká
+
+         double roundedValue = roundToTwoDecimalPlaces(input);
+
+
+     }
+
+     private double roundToTwoDecimalPlaces(double value) {
+         return Math.round(value * 100.0) / 100.0;
+     }
+
+
+ }
 
 
