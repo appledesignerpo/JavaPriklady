@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class ZoznamKnih {
     public static void main(String[] args) {
         //vytvorenie 1 knihy
-        Kniha kniha1 = new Kniha(); // objekt /instancia / s nazvom 1
+        Kniha kniha1 = new Kniha(); // objekt /instancia / s nazvom kniha1
         kniha1.nazov = "Java";
         kniha1.autor = "Java Zidek";
         kniha1.cena = 2.30;
@@ -21,7 +21,7 @@ public class ZoznamKnih {
         System.out.println(); //prazny riadok
 
         //vytvorenie 2 knihy
-        Kniha kniha2 = new Kniha(); // objekt /instancia / s nazvom 1
+        Kniha kniha2 = new Kniha(); // objekt /instancia / s nazvom kniha2
         kniha2.nazov = "Ja robot";
         kniha2.autor = "Isaac Asimov";
        /* kniha2.cena = 2.30;
@@ -38,9 +38,9 @@ public class ZoznamKnih {
         knihy.add(kniha1);
         knihy.add(kniha2);
 
-        // vypsi obsah
+        // vypise obsahu knih
         for (Kniha konkretnaKniha:knihy){
-            /*System.out.println(konkretnaKniha); // vypise nezrrozimitelne*/
+            /*System.out.println(konkretnaKniha); // vypise nezrrozimitelny text*/
             System.out.println(); //prazny riadok
             System.out.println("Nazov knihy: " + konkretnaKniha.nazov);
             System.out.println("Autor: " + konkretnaKniha.autor);
@@ -51,6 +51,6 @@ public class ZoznamKnih {
 
 
         //vypisanie
-        System.out.println(knihy);
+        //System.out.println(knihy);
 }
 }
