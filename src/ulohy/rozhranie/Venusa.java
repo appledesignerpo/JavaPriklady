@@ -4,7 +4,7 @@ class Venusa implements Planeta {
 
     @Override
     public void planetSize() {
-        System.out.println("Priemer venuse je  1900km");
+        System.out.println("Priemer venuse je  1900km.");
     }
 
     @Override

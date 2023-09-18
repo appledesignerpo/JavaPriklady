@@ -4,7 +4,7 @@ class Zem implements Planeta {
 
     @Override
     public void planetSize() {
-        System.out.println("Priemer zeme je 2500km");
+        System.out.println("Priemer zeme je 2500km.");
     }
 
     @Override

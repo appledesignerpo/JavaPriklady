@@ -6,7 +6,7 @@ class Merkur implements Planeta {
 
     @Override
     public void planetSize() {
-        System.out.println("Merkur ma priemer 5500km");
+        System.out.println("Merkur ma priemer 5500km.");
     }
 
     @Override
