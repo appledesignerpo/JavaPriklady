@@ -1,4 +1,4 @@
-package oop.dedicnost;
+package oop.dedicnost.priklad1;
 
 class Vehicle {
     protected String brand = "Ford";        // Vehicle attribute

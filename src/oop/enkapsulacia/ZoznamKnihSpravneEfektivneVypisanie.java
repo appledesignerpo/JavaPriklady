@@ -2,7 +2,7 @@ package oop.enkapsulacia;
 
 import java.util.ArrayList;
 
-public class ZoznamKnihSpravne {
+public class ZoznamKnihSpravneEfektivneVypisanie {
     public static void main(String[] args) {
 
         KnihaSpravne kniha1 = new KnihaSpravne(); // objekt /instancia / s nazvom kniha1
@@ -13,10 +13,11 @@ public class ZoznamKnihSpravne {
 
         System.out.println("Vypiš detail  knihy:");
         System.out.println("----------------");
-        System.out.println("Nazov knihy: " + kniha1.getNazov());
+       /* System.out.println("Nazov knihy: " + kniha1.getNazov());
         System.out.println("Autor knihy: " + kniha1.getAutor());
         System.out.println("Cena knihy: " + kniha1.getCena());
-        System.out.println("Rok vydania: " + kniha1.getRokVydania());
+        System.out.println("Rok vydania: " + kniha1.getRokVydania());*/
+        System.out.println(kniha1);
 
 
 
@@ -29,10 +30,11 @@ public class ZoznamKnihSpravne {
 
         System.out.println("Vypiš detail  knihy 2 :");
         System.out.println("----------------");
-        System.out.println("Nazov knihy: " + kniha2.getNazov());
+      /*  System.out.println("Nazov knihy: " + kniha2.getNazov());
         System.out.println("Autor knihy: " + kniha2.getAutor());
         System.out.println("Cena knihy: " + kniha2.getCena());
-        System.out.println("Rok vydania: " + kniha2.getRokVydania());
+        System.out.println("Rok vydania: " + kniha2.getRokVydania());*/
+        System.out.println(kniha2);
 
 
 
@@ -43,13 +45,14 @@ public class ZoznamKnihSpravne {
         knihy.add(kniha2);
 
         // vypise obsahu knih
-        for (KnihaSpravne konkretnaKniha:knihy){
+        for (KnihaSpravne knihaObjekt:knihy){
             /*System.out.println(konkretnaKniha); // vypise nezrrozimitelny text*/
             System.out.println(); //prazny riadok
-            System.out.println("Nazov knihyN: " + konkretnaKniha.getNazov());
+        /*    System.out.println("Nazov knihyN: " + konkretnaKniha.getNazov());
             System.out.println("AutorN: " + konkretnaKniha.getAutor());
             System.out.println("Cena knihyN: " + konkretnaKniha.getCena());
-            System.out.println("Rok vydania knihyN: " + konkretnaKniha.getRokVydania());
+            System.out.println("Rok vydania knihyN: " + konkretnaKniha.getRokVydania());*/
+            System.out.println(knihaObjekt);
             System.out.println(); //prazny riadok
         }
 
