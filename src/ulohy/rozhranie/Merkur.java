@@ -18,4 +18,8 @@ class Merkur implements Planeta {
         System.out.println("Na  planete Merkuj nie zivot");
     }
 
+    public void mesiace() {
+        System.out.println("Nemá žiadne mesiace");
+    }
+
 }

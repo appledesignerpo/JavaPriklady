@@ -17,6 +17,7 @@ public class Main {
         myMerkur.planetSize();
         myMerkur.color();
         myMerkur.zivot();
+        myMerkur.mesiace();
         System.out.println("---------------------");
 
 
@@ -24,11 +25,14 @@ public class Main {
         myVenusa.planetSize();
         myVenusa.color();
         myVenusa.zivot();
+        myVenusa.mesiace();
         System.out.println("---------------------");
+
         Zem myZem = new Zem();
         myZem.planetSize();
         myZem.color();
         myZem.zivot();
+        myZem.mesiace();
         System.out.println("---------------------");
 
     }

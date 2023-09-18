@@ -16,4 +16,8 @@ class Zem implements Planeta {
         System.out.println("Na zemi je  zivot ale nicime ju");
     }
 
+    public void mesiace() {
+        System.out.println("Má 1 mesiac a ufo zakladne na nom");
+    }
+
 }

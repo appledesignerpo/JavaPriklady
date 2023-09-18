@@ -16,4 +16,8 @@ class Venusa implements Planeta {
         System.out.println("Na venusi nie je zivot - dokazene roverom");
     }
 
+    public void mesiace() {
+        System.out.println("Má 3 mesiace okolo obeznej drahy");
+    }
+
 }
